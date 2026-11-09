@@ -1,0 +1,44 @@
+{
+  "name": "vectorted-galaxy",
+  "version": "r8",
+  "description": "A canvas-based, highly-interactive nested galaxy graph visualization engine.",
+  "type": "module",
+  "main": "live.js",
+  "types": "./live.d.ts",
+  "exports": {
+    ".": {
+      "types": "./live.d.ts",
+      "import": "./live.js"
+    }
+  },
+  "bin": {
+    "live": "./live.js"
+  },
+  "files": [
+    "live.js",
+    "live.d.ts",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "live": "node live.js --root ./ --index theme.html --host localhost --port 8080 --spa",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "canvas",
+    "graph",
+    "galaxy",
+    "visualization",
+    "dataviz",
+    "interactive"
+  ],
+  "author": "Vectorted",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vectorted/galaxy.git"
+  }
+}
